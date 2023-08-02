@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form </title>
+
+    <style>
+        label{
+            display: block;
+            margin-bottom:10px;
+        }
+
+        .reset{
+            margin-top:14px;
+        }
+    </style>
+</head>
+<body>
+  <form>
+    <label for="Name">Name :
+    <input type="text"> </label>
+ 
+    
+    <label for="email">Your Email :
+        <input type="Email">
+    </label>
+
+    <fieldset>
+        <legend>Pik one pitha</legend>
+        
+        <label for="pitha">
+            <input type="radio" name="pitha" id="vapa">Vapa
+        </label>
+        <label for="pitha">
+            <input type="radio" name="pitha" id="Chithoy">Chithoy
+        </label>
+        <label for="pitha">
+            <input type="radio" name="pitha" id="puli">puli
+        </label>
+
+    </fieldset>
+<br>
+    <fieldset>
+        <legend>pik one votta</legend>
+        <label for="sorisa">
+            <input type="checkbox" name="votta" id="sorisa">sorisa
+        </label>
+        <label for="sutki">
+            <input type="checkbox" name="votta" id="sutki">sutki
+        </label>
+        <label for="begunvotta">
+            <input type="checkbox" name="votta" id="begunvotta">begunvotta
+        </label>
+        <label for="masvotta">
+            <input type="checkbox" name="votta" id="masunvotta">begunvotta
+        </label>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Special Instruction</legend>
+
+        <label for="message">
+            <textarea name="message" id="message" cols="60" rows="6"></textarea>
+       </label>
+       
+    </fieldset>
+    
+    <div class="reset">
+        <input type="reset">
+        <input type="submit">
+    </div>
+  </form>  
+</body>
+</html>

@@ -1,0 +1,34 @@
+.images{
+    
+    width:300px;
+    height:auto;
+    margin: auto;
+}
+
+.images img{
+    width:100%;
+    height:auto;
+    border: 1px dashed;
+}
+
+#boy {
+    position: relative;
+    top: 249px;
+    z-index: 33;
+}
+#computer {
+    position: relative;
+    top: 122px;
+    z-index: 1;
+}
+#water{
+    position:relative;
+    z-index: -1;
+
+}
+
+.dummy{
+    height:150px;
+    width:200px;
+    background-color: brown;
+}

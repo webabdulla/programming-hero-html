@@ -1,0 +1,40 @@
+.stage{
+    width: 500px;
+    height: 300px;
+    background-color: lightskyblue;
+    
+}
+
+@keyframes sliding {
+    0%{
+        background-color: limegreen;
+        left: 0;
+        top :0;
+        transition: .5s;
+    }
+    25%{
+        background-color: rgb(255, 0, 64);
+        left: 400px;
+        top: 300px;
+        transition: .5s;
+    }
+    50%{
+        top: 0px;
+        transition: .5s;
+    }
+    100%{
+        top: 50px;
+    }
+}
+.ball{
+    width: 100px;
+    height: 100px;
+    background-color: limegreen;
+    border-radius: 50%;
+    animation: sliding 1s ease-in-out infinite alternate-reverse ;
+    animation-play-state: running;
+    position: relative;
+
+}
+
+

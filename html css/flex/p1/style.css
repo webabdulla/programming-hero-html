@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+body{
+  max-width: 1496px;
+  margin:auto;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.btn {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #fff;
+  background-color: #ff900e;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border: none;
+  padding: 10px 25px;
+}
+/* our team section */
+.our-team {
+    margin-top: 70px;
+  }
+  
+  .team {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+  }
+  
+  .team-members {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .team-image img {
+    width: 250px;
+    height: auto;
+  }
+  
+  .team-content h3 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    color: #727272;
+  }
+  .team-content span {
+    color: #131313;
+  }
+  
+  .team-content h4 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    color: #ff900e;
+    margin-bottom: 20px;
+  }
+  .team-content p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 1200px) {
+    .team-image img {
+        width: 180px;
+        height: auto;
+    }
+}
+  @media (max-width: 991px) {
+      .container {
+          width: 88%;
+          
+      }
+      .team-image img {
+          width: 150px;
+          height: auto;
+      }
+      .team {
+          gap: 60px;
+      }
+  }
+  
+  @media (max-width: 768px) {
+    .our-team {
+      margin-top: 50px;
+    }
+    .team {
+      display: block;
+    }
+    .team-members {
+      display: block;
+    }
+    .team-image img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 30px;
+    }
+    .team {
+      text-align: center;
+    }
+    .team-content h3 {
+      font-size: 30px;
+      line-height: 37px;
+    }
+    .team-content h4 {
+      font-size: 30px;
+      line-height: 37px;
+    }
+    .btn {
+      font-size: 16px;
+      line-height: 23px;
+    }
+  }

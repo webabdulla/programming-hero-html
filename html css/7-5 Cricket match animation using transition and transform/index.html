@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-4 Introduction to CSS animation Transition</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .field{
+            border:2px solid #000;
+        }
+        .field:hover .bat{
+            transform: rotate(-60deg);
+            transform-origin: top right;
+           
+        }
+        .bat{
+            transition:  transform 0.2s ease-in;
+        }
+        .boll{
+            width:50px;
+            height:50px;background-color:red;
+            border-radius: 50%;
+            position:relative;
+            left:520px;
+            transition: transform 1s ease-out .2s;
+        }
+        .field:hover .boll{
+           transform: translate(600px, -500px);
+           
+          }
+
+    </style>
+</head>
+<body>
+   <div class="field">
+    <img class="bat" src="./img/NicePng_cricket-bat-png_3847998.png" alt="">
+    <div class="boll"></div>
+   </div>
+    
+</body>
+</html>

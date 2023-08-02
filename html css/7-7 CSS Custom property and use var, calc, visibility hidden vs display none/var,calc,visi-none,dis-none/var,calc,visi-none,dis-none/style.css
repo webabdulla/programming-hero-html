@@ -1,0 +1,36 @@
+.box{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+}
+
+#box-3{
+    color: aqua;
+    /* display: none; */
+    visibility: hidden;
+}
+
+
+
+/* //section part// */
+:root{
+    --primary-color:rgb(205, 90, 115);
+}
+
+h1
+{
+    color: blueviolet;
+    color: slateblue;
+}
+
+#heading-3{
+    border: 2px solid var(--primary-color);
+}
+
+p{
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.boxy{
+    background-color: var(--primary-color);
+}
